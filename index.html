@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <meta charset="utf8" />
+    <title>Le site UNESCO Pyrénées-Mont Perdu</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"/>
+	  <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+    <!-- Ici pour inclure l'autre fichier dans mon code -->
+    <script src="3chemins.js"></script>
+    <link rel="stylesheet" href="styleUNESCO.css" />
+  </head>
+  <img src="Photos/banner.jpeg" alt="Photo Banner" style="width: 100%;">
+  <body>
+    <h1>Le site UNESCO Pyrénées-Mont Perdu</h1>
+    <p>Bienvenu à toi cher touriste! Si tu ne connais pas du tout cette région, tant mieux! J'espère que cette carte te permettra de découvrir cette magnifique région pendant tes prochaines vacances...</p>
+
+    <h2>Pourquoi est-ce un site de l'UNESCO?</h2>
+      Cette région culmine à une altitude de 3352m au sommet du Mont Perdu, est est située à cheval sur la frontière Franco-Espagnole. C'est un patrimoine naturel et culturel, de par sa géologie splendide (canyon, cirques, et autre beautés rocheuses), mais aussi sa richesse historique charactérisée par des traditions inchangées de transhumance et de vie alpestre. 
+    </p>
+
+    <div class="main">
+      <div id="mymap" class="carte-interactive"></div>
+
+      <div class="sidebar">
+
+        <p class="explication">Cette carte interactive te permet de t'orienter sur le site UNESCO Pyrénées-Mont Perdu. </p>
+
+    <!-- The info with the légende and links and stuff is all in a table hence the weird structure and multiple trs and tds -->
+        <div class="infobox">
+          <table cellpadding="3">
+            <tr>
+              <td><b>Légende :</b></td>
+              <td><img src="Icons/parkingicon.svg" alt="Icon" height="30" width="22"> Point de départ</td>
+            </tr>
+            <tr><td></td><td> <img src="Icons/mountainicon.svg" alt="Icon" height="30" width="22"> Point de géographie</td></tr>
+            <tr><td></td><td> <img src="Icons/villageicon.svg" alt="Icon" height="30" width="22"> Village</td></tr>
+            <tr><td></td><td><img src="Icons/cheminlegende.png" alt="Icon" height="30" width="22"> Randonnées (dif. niveaux) </td></tr>  
+
+            <tr>
+              <td style="vertical-align: top;"><b>Tourisme :</b></td>
+              <td>
+                <a href="https://whc.unesco.org/fr/list/773/" target="_blank">Patrimoine UNESCO</a><br>
+                <a href="https://www.valleesdegavarnie.com/" target="_blank">Vallées de Gavarnies</a><br>
+                <a href="https://www.alltrails.com/fr/parcs/spain/huesca/parque-nacional-de-ordesa-y-monte-perdido" target="_blank">Randonnées supplémentaires</a>              </td>
+            </tr>
+
+            <tr>
+              <td style="vertical-align: top;"><b>Randonnées :</b></td>
+              <td>
+                <a href="https://www.alltrails.com/en-gb/explore/trail/france/hautes-pyrenees/gavarnie-gavarnie-cirque" target="_blank"> Gavarnie - Cirque de Gavarnie (balade familiale)</a><br><br>
+                <a href="https://www.alltrails.com/en-gb/explore/trail/spain/huesca/cascada-del-cinca-llanos-de-la-larri-lagos-de-la-munia" target="_blank">Pineta - Cascada del Cinca (marche d'une journée)</a><br><br>
+                <a href="https://www.alltrails.com/en-gb/explore/trail/spain/huesca/refugio-de-goriz-gavarnie " target="_blank">Refugio de Goriz - Gavarnie (trek de plusieurs jours)</a>              </td>
+            </tr>
+
+          </table>
+        </div>
+
+        <div class="copyright">
+          2023 © slackcartography
+        </div>
+
+      </div>
+    </div>
+
+    <div class="scrollable-empty-space">
+      <!-- Just to add some padding below the map part -->
+  </div>
+
+    <script src="indexUNESCO.js" ></script>
+
+  </body>
+</html>
